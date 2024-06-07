@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     /**
      * Quick theory of Recursion
@@ -12,26 +14,18 @@ public class Main {
      * space complexity:
      */
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter any number you want to find results for: ");
+        int n = sc.nextInt();
+        Factorial fact = new Factorial();
+        Fibonacci fibo = new Fibonacci();
+        Power pow = new Power();
+
 //        Q1: Fibonacci Number
-        int num = 5;
-        System.out.println("Sum of Fibonacci Numbers:"+fibo(7));
+        System.out.println("Sum of first "+n+" Fibonacci Numbers:"+fibo.calc(n));
 //        Q2: Factorial Number
-        System.out.println("Factorial of "+num+ " is: "+ factorial(num));
-    }
-
-    static int fibo(int n) {
-        if (n < 2) {
-            return n;
-        } else {
-            return fibo(n - 1) + fibo(n - 2);
-        }
-    }
-
-    static int factorial(int num) {
-        if (num < 2) {
-            return num;
-        } else {
-            return num * factorial(num -1);
-        }
+        System.out.println("Factorial of "+n+ " is: "+ fact.calc(n));
+//        Q3: Power of a Number
+        System.out.println("Power of " +n+ " is: "+pow.calc(n,n));
     }
 }
