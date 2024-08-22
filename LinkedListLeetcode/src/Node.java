@@ -11,7 +11,7 @@ public class Node {
 //        1, 2 === newNode = 2, head = 1
 
         Node newNode = new Node(value);
-        if (head == null) {
+        if (head == null || head.data >= value) {
             newNode.next = head;
             head = newNode;
         } else {
