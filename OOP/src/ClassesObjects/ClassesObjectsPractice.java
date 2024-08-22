@@ -1,9 +1,9 @@
-/* 1. Create a class Employee with the following properties and methods:
+package ClassesObjects;/* 1. Create a class ClassesObjects.Employee with the following properties and methods:
 Salary (property) (int); getSalary (method returning int);
 name (property) (String); getName (method returning String); setName (method changing name) */
 //2. Create a class cellphone with methods to print “ringing…”, “vibrating…”, etc.
-//3. Create a class Square with a method to initialize its side, calculating area, perimeter etc.
-//4. Create a class Rectangle & problem 3.
+//3. Create a class ClassesObjects.Square with a method to initialize its side, calculating area, perimeter etc.
+//4. Create a class ClassesObjects.Rectangle & problem 3.
 
 
 class Employee{
@@ -62,12 +62,12 @@ public class ClassesObjectsPractice {
 //        problem 3
         Square sq = new Square();
         sq.length = 4.4F;
-        System.out.println("The area of Square is: "+ sq.getArea());
+        System.out.println("The area of ClassesObjects.Square is: "+ sq.getArea());
         System.out.println("The area of Perimeter is: "+sq.getPerimeter());
 //        problem 4:
         Rectangle rect = new Rectangle();
         rect.length = 4;
         rect.breadth = 5;
-        System.out.println("The area of Rectangle: "+ rect.getArea());
+        System.out.println("The area of ClassesObjects.Rectangle: "+ rect.getArea());
     }
 }
