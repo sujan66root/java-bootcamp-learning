@@ -1,0 +1,35 @@
+Abstraction:
+- One of four pillars of OOP:
+- Refers to hiding the implementation part and showing only essential details. (covers backend you can say)
+- Can be achieved through the use of abstract class and interface
+
+i. Abstract Class:
+- Use of Abstract keyword for creating the class
+- Can have Two methods (Abstract method or concrete method)
+
+// Talking about Abstract Method:
+- doesn't have implementation (just the method - hides implementation and doesnt show it)
+- implementation is done in inherited class:
+- for ex: see in Abstraction.java file Package
+- basically that is all abstraction
+
+ii. Interface:
+
+
+Reference (Variable):
+- It is a way to access the object or holds the memory address of the object.
+
+--- Method Overriding:
+- There is over ride displayed when the abstract method is implemented in inherited class (Rectangle).
+- the method doesn't need to be abstract. It is just that the implementation is on the inherited (sub) class and
+method is also there in the super class, the method in subclass over rides the method in super class and this
+process in method overriding.
+
+Polymorphism:
+- another pillar of OOP
+- Having many forms and it can be achieved through method overloading and method overriding:
+
+--- Method Overloading:
+- the process or feature where there are multiple methods with same name but different parameters, or type of
+parameters or number of parameters. such process is method over loading
+- this is also known an compile time polymorphism or static polymorphism or early binding
